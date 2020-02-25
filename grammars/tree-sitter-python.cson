@@ -12,16 +12,7 @@ firstLineRegex: [
 ]
 
 fileTypes: [
-  'py'
-  'pyi'
-  'pyw'
-  'gyp'
-  'gypi'
-  'SConstruct'
-  'Sconstruct'
-  'sconstruct'
-  'SConscript'
-  'wsgi'
+  'zok'
 ]
 
 folds: [
@@ -60,7 +51,7 @@ folds: [
 ]
 
 comments:
-  start: '# '
+  start: '//'
 
 scopes:
   'module': 'source.python'

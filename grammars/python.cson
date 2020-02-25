@@ -1,23 +1,7 @@
 'scopeName': 'source.python'
-'name': 'Python'
+'name': 'Zokrates'
 'fileTypes': [
-  'cpy'
-  'gyp'
-  'gypi'
-  'kv'
-  'py'
-  'pyw'
-  'pyi'
-  'rpy'
-  'SConscript'
-  'SConstruct'
-  'Sconstruct'
-  'sconstruct'
-  'Snakefile'  # Snakemake support
-  'smk'        # Snakemake support
-  'tac'
-  'wscript'
-  'wsgi'
+  'zok'
 ]
 'firstLineMatch': '^#![ \\t]*/.*\\bpython[\\d\\.]*\\b'
 'injections':
@@ -870,18 +854,18 @@
     'match': '\\b(self|cls)\\b'
     'name': 'variable.language.self.python'
   'line_comments':
-    'begin': '(^[ \\t]+)?(?=#)'
+    'begin': '(^[ \\t]+)?(?=//)'
     'beginCaptures':
       '1':
         'name': 'punctuation.whitespace.comment.leading.python'
     'end': '(?!\\G)'
     'patterns': [
       {
-        'begin': '#'
+        'begin': '//'
         'beginCaptures':
           '0':
             'name': 'punctuation.definition.comment.python'
-        'end': '\\n'
+        'end': '$'
         'name': 'comment.line.number-sign.python'
       }
     ]
